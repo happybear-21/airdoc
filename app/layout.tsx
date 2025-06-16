@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/providers";
+import { RootProvider } from 'fumadocs-ui/provider';
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -25,7 +26,9 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange enableColorScheme>
           <div className="relative flex min-h-svh flex-col bg-background">
-            {children}
+            <RootProvider>
+              {children}
+            </RootProvider>
           </div>
         </ThemeProvider>
       </body>
