@@ -7,8 +7,7 @@ export default function Home() {
       <div className="flex flex-col min-h-[calc(100vh-4rem)] py-12">
         <div className="max-w-3xl px-4">
           <h1 className="text-4xl tracking-tight sm:text-5xl md:text-6xl mb-6">
-            <span className="block">Welcome to</span>
-            <span className="block text-primary mt-2">AirDoc</span>
+            <span className="block">Welcome to AirDoc</span>
           </h1>
 
           <p className="text-lg text-muted-foreground mb-8">
