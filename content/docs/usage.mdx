@@ -1,0 +1,62 @@
+---
+title: Basic Usage
+description: Learn how to use the basic features
+---
+
+# Basic Usage
+
+This guide will walk you through the basic features and how to use them effectively.
+
+## Getting Started
+
+Here's a simple example of how to use our main feature:
+
+```typescript
+import { MyComponent } from '@your-project/components';
+
+function App() {
+  return (
+    <MyComponent
+      title="Hello World"
+      description="This is a sample component"
+    />
+  );
+}
+```
+
+## Common Patterns
+
+### 1. Basic Configuration
+
+```typescript
+const config = {
+  theme: 'light',
+  language: 'en',
+  features: ['feature1', 'feature2']
+};
+```
+
+### 2. Event Handling
+
+```typescript
+function handleClick(event: React.MouseEvent) {
+  console.log('Button clicked!');
+  // Add your custom logic here
+}
+```
+
+## Best Practices
+
+1. Always use TypeScript for better type safety
+2. Follow the component naming conventions
+3. Keep your code modular and reusable
+4. Write meaningful comments
+
+## Troubleshooting
+
+If you encounter any issues:
+
+1. Check the console for error messages
+2. Verify your configuration
+3. Make sure all dependencies are installed
+4. Check the [FAQ](/docs/faq) for common solutions 
